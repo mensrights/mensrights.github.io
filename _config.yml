@@ -1,0 +1,11 @@
+name: Men's Rights 101
+description: A website discussing information about the Men's Rights Movement.
+permalink: /:categories/:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"

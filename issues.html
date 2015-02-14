@@ -1,0 +1,17 @@
+---
+layout: default
+title: Issues Page
+permalink: /issues/
+---
+
+<h1>Issues</h1>
+<p>This is a list of some of the issues that we are trying to bring to light. Many people are not aware of the extent that men are affected by these issues. Let's change that! Keep checking back for updates, as this is the most active portion of the website. The site is fairly new, so the content is still being added.</p>
+<h2>Articles</h2>
+<ul class="issueslist">
+{% for post in site.categories['issues'] %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+{% endfor %}
+</ul>
